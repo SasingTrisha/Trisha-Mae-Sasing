@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>ACTIVITY 2</h1>
+    <p>Create a Javascript program that checks your zodiac sign</p>
+    <p id="demo"></p>
+    <script>
+        let myBirthday = ["October", 15];
+        let result = zodiacSign(myBirthday[0], myBirthday[1]);
+        function zodiacSign (month, day)
+        {
+            if( month == "december" || month == "December")
+            {
+                if (day < 22)
+                    zodiacSign = "Sagittarius";
+                else
+                    zodiacSign = "Capricorn";
+                }
+            else if (month == "january" || month == "january")
+            {
+                if (day < 20)
+                zodiacSign = "Capricorn";
+                else
+                zodiacSign = "Aquarius";
+            }
+            else if (month ==  "february" || month == "February")
+            {
+                if (day < 20)
+                zodiacSign = "Aquarius";
+                else
+                zodiacSign = "Pieces";
+            }
+            else if (month ==  "march" || month == "March")
+            {
+                if (day < 19)
+                zodiacSign = "Pieces";
+                else
+                zodiacSign = "Aries";
+            }
+            else if (month ==  "april" || month == "April")
+            {
+                if (day < 20)
+                zodiacSign = "Aries";
+                else
+                zodiacSign = "Taurus";
+            }
+            else if (month ==  "may" || month == "May")
+            {
+                if (day < 21)
+                zodiacSign = "Taurus";
+                else
+                zodiacSign = "Gemini";
+            }
+            else if (month ==  "june" || month == "June")
+            {
+                if (day < 20)
+                zodiacSign = "Gemini";
+                else
+                zodiacSign = "Cancer";
+            }
+            else if (month ==  "july" || month == "July")
+            {
+                if (day < 23)
+                zodiacSign = "Cancer";
+                else
+                zodiacSign = "Leo";
+            }
+            else if (month ==  "august" || month == "August")
+            {
+                if (day < 23)
+                zodiacSign = "Leo";
+                else
+                zodiacSign = "Virgo";
+            }
+            else if (month ==  "september" || month == "September")
+            {
+                if (day < 23)
+                zodiacSign = "Virgo";
+                else
+                zodiacSign = "Libra";
+            }
+            else if (month ==  "october" || month == "October")
+            {
+                if (day < 21)
+                zodiacSign = "Libra";
+                else
+                zodiacSign = "Scorpius";
+            }
+            else if (month ==  "november" || month == "November")
+            {
+                if (day < 22)
+                zodiacSign = "Scorpius";
+                else
+                zodiacSign = "Sagittarius";
+
+            return document.write("Your zodiac sign is " + zodiacSign);
+        }
+        </script>
+</body>
+</html>
